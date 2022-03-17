@@ -3,10 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                script{
-                    hello_exec: pattern.cpp
-	                          gcc pattern.cpp -o pattern_exec
-                }
+                bat make
             }
         }
         stage ('test') {
