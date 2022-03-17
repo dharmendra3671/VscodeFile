@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                make 'CMakeLists.txt'
+                bat 'CMakeLists.txt'
             }
         }
         stage ('test') {
