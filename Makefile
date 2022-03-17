@@ -1,2 +1,2 @@
-pattern_exec: pattern.cpp
-	g++ pattern.cpp -o pattern_exec
+pattern_exec: pattern.c
+	gcc pattern.c -o pattern_exec
