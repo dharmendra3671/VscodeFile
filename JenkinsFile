@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                cmakeBuild buildDir: 'build', buildType: 'Debug', cleanBuild: true, installation: 'InSearchPath', label: 'pattern_C', sourceDir: 'Pattern/build/CMakeLists.txt', steps: [[args: 'clean all']]
+                cmakeBuild buildDir: 'build', buildType: 'Debug', cleanBuild: true, installation: 'InSearchPath', label: 'pattern_C', sourceDir: 'D:\Jenkins\workspace\pipeline-project-C\build\CMakeLists.txt', steps: [[args: 'clean all']]
             }
         }
         stage ('test') {
