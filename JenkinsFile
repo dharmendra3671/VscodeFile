@@ -2,8 +2,8 @@ pipeline {
     agent any
     stages {
         stage('build') {
-            steps {
-                cmakeBuild buildDir: 'build', cleanBuild: true, installation: 'InSearchPath', label: 'build_C', sourceDir: 'D://Jenkins//workspace//pipeline-project-C', steps: [[args: 'clean all'], [args: 'install', envVars: 'DESTDIR=${WORKSPACE}/path/to/dir']]
+           cmake {
+                path "src/main/cpp/CMakeLists.txt"
             }
         }
         stage ('test') {
