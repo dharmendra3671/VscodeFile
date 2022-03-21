@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'cmakeBuild buildDir: 'build', buildType: 'Debug', cleanBuild: true, installation: 'InSearchPath', label: 'build_C', sourceDir: 'D:/Test/Testfile/src', steps: [[args: 'install', envVars: 'DESTDIR=${WORKSPACE}/path/to/dir']]'
+                cmakeBuild buildDir: 'build', cleanBuild: true, installation: 'InSearchPath', label: 'build_C', sourceDir: 'CMakeLists.txt', steps: [[args: 'clean all'], [args: 'install', envVars: 'DESTDIR=${WORKSPACE}/path/to/dir']]
             }
         }
         stage ('test') {
@@ -14,3 +14,4 @@ pipeline {
        
     }
 }
+
