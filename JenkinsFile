@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                cmakeBuild buildDir: 'build', buildType: 'Debug', generator: 'MinGW Makefiles', installation: 'InSearchPath', label: '3.22.3_autoinstall', sourceDir: 'D:\\Jenkins\\workspace\\pipeline-project-C\\Pattern\\', steps: [[args: 'clean all'], [args: 'install', envVars: 'DESTDIR=${WORKSPACE}/path/to/dir']]
+                cmakeBuild buildDir: 'build', buildType: 'Debug', generator: 'MinGW Makefiles', installation: 'InSearchPath', label: '3.22.3_autoinstall', sourceDir: 'D:\\Jenkins\\workspace\\pipeline-project-C\\Pattern\\', steps: [[args: 'clean all'], [args: 'install', envVars: 'DESTDIR=${WORKSPACE}\pipeline-project-C\Pattern']]
             }
         }
         stage ('test') {
