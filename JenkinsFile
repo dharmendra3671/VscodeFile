@@ -2,8 +2,8 @@ pipeline {
     agent any
     stages {
         stage('build') {
-           cmake {
-                path ""
+            steps {
+                cmakeBuild buildDir: 'build', buildType: 'Debug', cleanBuild: true, installation: 'InSearchPath', label: 'pattern_C', sourceDir: 'Pattern/CMakeLists.txt', steps: [[args: 'clean all']]
             }
         }
         stage ('test') {
@@ -11,7 +11,5 @@ pipeline {
                 echo 'testing'
             }
         }
-       
     }
 }
-
