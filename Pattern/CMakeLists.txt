@@ -1,4 +1,4 @@
 cmake_minimum_required(VERSION 2.6)
-project(minimal_example)
+project(Pattern)
 
-add_executable(Example src/example.cpp)
+add_executable(Pattern/src/pattern.cpp)
