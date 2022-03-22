@@ -1,1 +1,1 @@
-bin/Debug/Pattern
+"Pattern/src/pattern"
