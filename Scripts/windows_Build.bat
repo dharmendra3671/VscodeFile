@@ -1,2 +1,2 @@
-Pattern/premake/premake4 gmake2
+Pattern/src/premake/premake4 gmake2
 make
