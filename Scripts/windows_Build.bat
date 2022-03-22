@@ -1,1 +1,2 @@
-files { "Pattern/src/*.cpp" }
+D:\premake-src\premake\build gmake.windows
+make
