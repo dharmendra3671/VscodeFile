@@ -1,1 +1,1 @@
-files { "src/*.cpp" }
+files { "Pattern/src/*.cpp" }
