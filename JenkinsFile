@@ -7,10 +7,10 @@ pipeline {
                 bat "Scripts/windows_Build.bat"
             }
         }
-        stage ('test') {
+        stage ('execute') {
             steps {
-                echo 'testing'
-                
+                echo 'executing...'
+                bat "Scripts/windows_run.bat"
             }
         }
     }
