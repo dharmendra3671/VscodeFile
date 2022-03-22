@@ -1,2 +1,2 @@
-D:\cmake\bin
+D:/cmake/bin
 make
