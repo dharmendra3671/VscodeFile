@@ -4,7 +4,7 @@ project "Pattern"
 	location"Pattern"
 	kind "ConsoleApp"
 	language "C++"
-	targetdir"bin/%{cfg.buildcfg}"
+	targetdir"cmake/bin/%{cfg.buildcfg}"
 
 	files {"Pattern/src/**.cpp"}
 	
