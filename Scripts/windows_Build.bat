@@ -1,2 +1,2 @@
-Pattern/src/premake/premake4 gmake2
-make
+g++ "Pattern/src/pattern.cpp" -o "Pattern/src/pattern"
+
