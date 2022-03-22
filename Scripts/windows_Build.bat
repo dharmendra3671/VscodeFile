@@ -1,2 +1,2 @@
-D:\premake-src\premake\build gmake.windows
+Pattern/premake/premake4 gmake2
 make
