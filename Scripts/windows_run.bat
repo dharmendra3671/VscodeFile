@@ -1,1 +1,1 @@
-D:/cmake/bin/Pattern
+bin/Debug/Pattern
