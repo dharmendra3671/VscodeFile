@@ -1,0 +1,2 @@
+D:\cmake\bin
+make
