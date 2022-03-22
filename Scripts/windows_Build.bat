@@ -1,2 +1,1 @@
-D:/cmake/bin
-make
+files { "src/*.cpp" }
