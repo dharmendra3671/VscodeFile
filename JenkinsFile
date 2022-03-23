@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('compile') {
             steps {
-                echo "building"
+                echo "compiling.."
                 bat "Scripts/windows_Build.bat"
             }
         }
