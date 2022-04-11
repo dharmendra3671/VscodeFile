@@ -4,17 +4,12 @@ pipeline {
     stages {
         stage('Stage_D') {
             steps {
-                bat 'getjobstatus.py'
+                bat 'script1.py'
             }
         }
         stage('Stage_E') {
             steps {
-                bat 'sleep.py'
-            }
-        }
-        stage('Stage_F') {
-            steps {
-                bat 'sleep1.py'
+                bat 'script2.py'
             }
         }
     }
